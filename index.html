@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+    <div id="unity-container" style="width: 100%; height: 100%">
+      <canvas id="unity-canvas" width=auto height=auto></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -17,11 +17,11 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">TimeTrials_v0.0</div>
-      </div>
+<!--      <div id="unity-footer">-->
+<!--        <div id="unity-webgl-logo"></div>-->
+<!--        <div id="unity-fullscreen-button"></div>-->
+<!--        <div id="unity-build-title">TimeTrials_v0.0</div>-->
+<!--      </div>-->
     </div>
     <script>
       var container = document.querySelector("#unity-container");
@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/new.loader.js";
+      var loaderUrl = buildUrl + "/webBuild23.loader.js";
       var config = {
-        dataUrl: buildUrl + "/new.data",
-        frameworkUrl: buildUrl + "/new.framework.js",
-        codeUrl: buildUrl + "/new.wasm",
+        dataUrl: buildUrl + "/webBuild23.data",
+        frameworkUrl: buildUrl + "/webBuild23.framework.js",
+        codeUrl: buildUrl + "/webBuild23.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "TimeTrials_v0.0",
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "100%";
+        canvas.style.height = "100%";
       }
 
       loadingBar.style.display = "block";
