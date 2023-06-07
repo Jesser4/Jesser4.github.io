@@ -3,9 +3,11 @@
 
 This reposity contains the WebGL build of the game from unity. This was my first attempt (May 2023) at making a unity game unguided.
 
-The site is deployed via GitHub Pages and can be found [here](https://jesser4.github.io/TimeTrial/).
+The site is deployed via GitHub Pages.
 
-Checkout the [Source Code](www.leekspin.com) - *coming soon*
+WebGL Build Repository (You are here)
+[Game Link](https://jesser4.github.io/TimeTrial/)
+[Source Code](https://github.com/Jesser4/TimeTrialSource/)
 
 ### Future Updates and Ideas
  - The game should scale to window size
